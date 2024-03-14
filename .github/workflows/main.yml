@@ -3,7 +3,7 @@ name: Update y folder automatically
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   update-y-folder:
