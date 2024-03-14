@@ -25,10 +25,3 @@ jobs:
          cd y
          cat sai.py
 
-      # - name: Commit and push changes
-      #   run: |
-      #     git config --global user.email "saikiran4054@gmail.com"
-      #     git config --global user.name "GitHub Actions"
-      #     git add -A
-      #     git commit -m "Auto update y folder from x folder"
-      #     git push
