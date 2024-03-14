@@ -1,27 +1,27 @@
 name: Update y folder automatically
 
-on: workflow_dispatch
-  # push:
-  #   branches:
-  #     - main
+on: 
+  push:
+    branches:
+      - main
 
 jobs:
   update-y-folder:
-    runs-on: ubuntu-latest
+    runs-on: self hosted
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: creating file
-        run: |
-          mkdir x
-          mkdir y
-          cd x
-          echo "sai"> sai.py
+      # - name: creating file
+      #   run: |
+      #     mkdir x
+      #     mkdir y
+      #     cd x
+      #     echo "sai"> sai.py
 
       - name: Copy contents from x to y
         run: cp -R x/* y/
-      - name: checking
-        run : |
-         cd y
-         cat sai.py
+      # - name: checking
+      #   run : |
+      #    cd y
+      #    cat sai.py
 
