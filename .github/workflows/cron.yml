@@ -1,23 +1,23 @@
-name: Cron Job Example
+# name: Cron Job Example
 
-on:
-  schedule:
-    - cron: '*/5 * * * *'  # Run every day at midnight UTC
-  push:
-    branches:
-      - dev
-      - main
+# on:
+#   schedule:
+#     - cron: '*/5 * * * *'  # Run every day at midnight UTC
+#   push:
+#     branches:
+#       - dev
+#       - main
 
-jobs:
-  cron_job:
-    runs-on: ubuntu-latest
+# jobs:
+#   cron_job:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
 
-      # Add your job steps here
-      - name: Run Your Cron Job
-        run: |
-          echo "Running cron job"
-          # Add your actual cron job commands here
+#       # Add your job steps here
+#       - name: Run Your Cron Job
+#         run: |
+#           echo "Running cron job"
+#           # Add your actual cron job commands here
